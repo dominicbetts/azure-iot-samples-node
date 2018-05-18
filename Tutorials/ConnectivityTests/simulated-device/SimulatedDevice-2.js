@@ -2,7 +2,8 @@
 
 // A test SAS token. To generate using the CLI:
 // az iot hub generate-sas-token --device-id MyTestDevice --hub-name {YourIoTHubName}
-var test_token = '{your test token}'
+// Get the token from a command line argument
+var test_token = process.argv[2];
 
 // Using the Node.js Device SDK for IoT Hub:
 //   https://github.com/Azure/azure-iot-sdk-node
